@@ -18,7 +18,7 @@ const Reservation = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:3000/api/v1/reservation/send",
+        "https://restaurant-one-iota.vercel.app/api/v1/reservation/send",
         { firstName, lastName, email, contact, date, time },
         {
           headers: {
